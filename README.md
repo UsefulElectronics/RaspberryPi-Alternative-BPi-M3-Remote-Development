@@ -6,7 +6,7 @@
 ### PCBWay
 Tutorial Series Sponsor PCBWay Website. You can get extra free coupons using the link below:
 
-[<img src="https://github.com/UsefulElectronics/esp32s3-gc9a01-lvgl/blob/main/banner/banner(320x100).gif">](https://www.pcbway.com/setinvite.aspx?inviteid=582640)
+[<img src="https://github.com/UsefulElectronics/RaspberryPi-Alternative-BPi-M3-Remote-Development/blob/main/Pictures/250x250.gif">](https://www.pcbway.com/setinvite.aspx?inviteid=582640)
 
 
 # RaspberryPi-Alternative-BPi-M3-Remote-Development
@@ -24,6 +24,6 @@ Webmin: web based system administration allows remote access over browser
 This tutorial is a very good introduction to learn embedded linux development 
 
 
-![Circuit Diagram](https://github.com/UsefulElectronics/esp32c2-rylr993-battery-voltage-lorawan/blob/main/circuit%20diagram/system%20diagram.PNG)
+![Circuit Diagram](https://github.com/UsefulElectronics/RaspberryPi-Alternative-BPi-M3-Remote-Development/blob/main/Pictures/hardware.PNG)
 ***
 
