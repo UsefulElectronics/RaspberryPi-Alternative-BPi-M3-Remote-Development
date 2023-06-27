@@ -21,7 +21,51 @@ SSH: used to connect remotely from the terminal
 XRDP: Remote Desktop Protocol
 Webmin: web based system administration allows remote access over browser 
 
-This tutorial is a very good introduction to learn embedded linux development 
+This tutorial is a very good introduction to learn embedded linux development;
+
+Balena Etcher image flashing program:
+https://etcher.balena.io/
+
+Armbian OS Image for BPI-M3:
+https://drive.google.com/file/d/1zKjbj9iwoCgbaPCImjQ44P4zLBHAB7di/view?usp=sharing
+
+To install Minicom on ubuntu OS, run the following command 
+
+```sh
+sudo apt-get install minicom
+```
+After installation, you can change the minicom settings:
+
+```sh
+sudo minicom -s 
+```
+
+To connect over UART to your board, execute:
+
+```sh
+sudo minicom --device dev/(UART port) --boaudrate 115200
+```
+
+(UART port) needs to be changed depending on your serial port. It is posible to check port number using this command:
+```sh
+dmesg | grep tty
+```
+
+In order to scan the surrounding WiFi network you need to use network-manager command:
+```sh
+nmcli device wifi list
+```
+Use this command to connect to you network over WiFi:
+```sh
+nmcli device wifi connect "$SSID" password "$PASSWORD"
+```
+Having connected successfully over WiFi, now it is possible to connect to you baord remotely using SSH.
+It is possible to checkyour board IP address by accessing your WiFi router and check the clint list. Of course, after making executing connection request after SSH you will be asked to enter your password.
+```sh
+ssh USERNAME@IP  //pi@192.168.1.102
+```
+
+If your image has desctop and you are on windows, you can access your board OS desctop using Xrdp. To insatall Xrdp package use the followng commands:
 
 
 ![Circuit Diagram](https://github.com/UsefulElectronics/RaspberryPi-Alternative-BPi-M3-Remote-Development/blob/main/Pictures/hardware.PNG)
