@@ -66,7 +66,38 @@ ssh USERNAME@IP  //pi@192.168.1.102
 ```
 
 If your image has desctop and you are on windows, you can access your board OS desctop using Xrdp. To insatall Xrdp package use the followng commands:
+```sh
+sudo apt install xrdp 
+```
+```sh
+sudo apt install xrdp xorgxrdp
+```
 
+In order to let Xrdp service run automatically after reboot use systemctl command. Note that you can use systemctl command with every service:
+```sh
+sudo systemctl enable xrdp
+```
+
+Check service status:
+```sh
+sudo systemctl status xrdp
+```
+
+Restart service:
+```sh
+sudo systemctl restart xrdp
+```
+
+webmin allows you to connect to your board over browser. This can  be useful espesially if your OS does not have  desctop. To install webmin:
+```sh
+wget https://prdownloads.sourceforge.net/webadmin/webmin_1.962_all.deb
+```
+```sh
+sudo dpkg -i webmin_1.962_all.deb 
+```
+```sh
+sudo apt -f install
+```
 
 ![Circuit Diagram](https://github.com/UsefulElectronics/RaspberryPi-Alternative-BPi-M3-Remote-Development/blob/main/Pictures/hardware.PNG)
 ***
